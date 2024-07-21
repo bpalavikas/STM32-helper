@@ -1,0 +1,24 @@
+
+
+
+Breakpoint=/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/Core/Src/main.c:130, State=BP_STATE_ON
+Breakpoint=/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/Core/Src/main.c:135:5, State=BP_STATE_DISABLED
+OpenDocument="main.c", FilePath="/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/Core/Src/main.c", Line=121
+OpenDocument="stm32f4xx_hal.c", FilePath="/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c", Line=315
+OpenDocument="stm32f4xx_it.c", FilePath="/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/Core/Src/stm32f4xx_it.c", Line=75
+OpenDocument="startup_stm32f411retx.s", FilePath="/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/Core/Startup/startup_stm32f411retx.s", Line=50
+OpenDocument="BVR_utils.c", FilePath="/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/Core/Src/BVR_utils.c", Line=212
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=0, w=227, h=1283, TabPos=1, TopOfStack=0, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Memory 1", DockArea=BOTTOM, x=1, y=0, w=176, h=332, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, EditorAddress=0x0
+OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=0, w=1191, h=1314, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=RIGHT, x=0, y=0, w=227, h=1283, TabPos=0, TopOfStack=1, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Console", DockArea=BOTTOM, x=0, y=0, w=1406, h=332, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+SmartViewPlugin="", Page="", Toolbar="Hidden", Window="SmartView 1"
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[106;196;196]
+TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Source"], ColWidths=[1470;140;100;100;1386]
+TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;1892]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[224;214;140;613]
+WatchedExpression="firmware_date", Window=Watched Data 1

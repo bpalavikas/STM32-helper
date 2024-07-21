@@ -1,0 +1,3 @@
+/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/build/debug/build/CMakeFiles/F411RE_std_utils.dir
+/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/build/debug/build/CMakeFiles/edit_cache.dir
+/mnt/Storage/Repos/STM32-helper/BVR-examples/F411RE_std_utils/build/debug/build/CMakeFiles/rebuild_cache.dir
