@@ -1,2 +1,6 @@
 cmake/
 build/
+.vscode/
+.vs/
+OZONE/
+
