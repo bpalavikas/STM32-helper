@@ -84,6 +84,15 @@ extern "C"
 /*--DEFINES-------------------------------------------------------------------*/
 #define FW_SIZE     24
 #define U_ID_SIZE   12
+#define MONTHS_SIZE 12
+  
+#define V_MAJOR     0
+#define V_MINOR     1
+#define V_PATCH     0
+
+#define RTOS_ACTIVE     1
+#define RTOS_INACTIVE   0
+
 // Defined by MCU get from data sheet
 /* 
 BASE ADDRESS FOR STM32 MCU
@@ -91,13 +100,6 @@ BASE ADDRESS FOR STM32 MCU
 0x1FFFF7E8 //(F103), 0x1FF0F420 //(F767), 0x1FFF7A10 // (F411RE)
 */
 #define U_ID_BASE_ADDR 0x1FFF7A10 // (F411RE)
-  
-#define V_MAJOR     0
-#define V_MINOR     1
-#define V_PATCH     0
-
-#define MONTHS_SIZE 12
-
 
 /*--DATA--TYPE----------------------------------------------------------------*/
 
@@ -130,6 +132,14 @@ extern uint8_t U_ID[U_ID_SIZE];
  *  @note  set in cti_utils.c file
  */
 extern uint32_t device_UID;			
+
+// rtos active flag
+/** @var volatile uint8_t is_rtos_active
+ *  @brief flag to check if rtos is active
+ *  @note  set in main.c file before starting kernal
+ *         0 = false, 1 = true
+ */
+extern volatile uint8_t is_rtos_active;
 
 
 /*--MACROS--------------------------------------------------------------------*/
@@ -204,6 +214,19 @@ void BVR_create_firmware_date(char *firmware_version);
   */
 void BVR_power_on_information(  const char *reset_cause_str, char *firmware_date,
                                 uint8_t *U_ID, uint32_t device_UID);
+
+
+/* Uncomment when using RTOS */
+/**
+  * @brief Before activating the rtos HAL delay can be prefered
+  * This function will run hal delay before the rtos active flag is set
+  * once the rtos active flag is set FreeRTOS delay is then used. 
+  * @note The rtos active flag must be set and setup by the user
+  * all relevant variable are found here. 
+  * @param uint32_t time_ms this is the time in ms for the delay
+  * @retval void
+  */
+// void BVR_delay_ms(uint32_t time_ms);
 
 
 #ifdef __cplusplus

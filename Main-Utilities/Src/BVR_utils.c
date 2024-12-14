@@ -26,10 +26,15 @@
 
 /*--DATA--TYPE----------------------------------------------------------------*/
 
+/* Uncomment when using RTOS */
+// static volatile TickType_t delay_ms;
+
+
 /*--GLOBAL--CONSTANTS---------------------------------------------------------*/
-/**/
+
 uint8_t     U_ID[U_ID_SIZE];
 uint32_t    device_UID;
+
 
 /*--STATIC--DATA--------------------------------------------------------------*/
 /**/
@@ -262,6 +267,22 @@ void BVR_power_on_information(  const char *reset_cause_str, char *firmware_date
     BVR_LOG(INFO, "--------------------------------------------------------\r\n");
 
 }
+
+
+/* Uncomment when using RTOS */
+// void CTI_delay_ms(uint32_t time_ms)
+// {
+//     if(is_rtos_active == RTOS_ACTIVE)
+//     {
+//         delay_ms = time_ms/portTICK_PERIOD_MS;
+//         vTaskDelay(delay_ms);
+//     }
+//     else
+//     {
+//         HAL_Delay(time_ms);
+//     }
+
+
 
 /******************************************************************************/
 /*                             END OF FILE                                    */
